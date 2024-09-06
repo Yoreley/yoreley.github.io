@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Contacto - Yoreley Villafañez</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            color: #5a5a5a;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h2,
+        h3 {
+            color: #ff69b4;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: 2px solid #ff69b4;
+        }
+
+        .btn-primary {
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff1493;
+        }
+
+        footer {
+            background-color: #ffc0cb;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./bienvenida.html">Bienvenida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./misproyectos.html">Mis Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./testimonios.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./miblog.html">Mi Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h2>Ponte en Contacto Conmigo</h2>
+        <p class="lead">Si tienes preguntas, sugerencias o simplemente quieres saludar, usa el formulario a
+            continuación.</p>
+    </header>
+
+    <section class="container py-5">
+        <form action="https://formspree.io/f/moqrrzge" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email"
+                    placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Yoreley Villafañez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
